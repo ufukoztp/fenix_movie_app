@@ -29,7 +29,7 @@ class _FavoriteViewState extends State<FavoriteView> with FavoriteMixin {
   Widget _buildBody(BuildContext context) {
     return BlocBuilder<FavoriteCubit, FavoriteState>(
       builder: (context, state) {
-       return state.maybeWhen(orElse: ()=>Container(),
+       return state.maybeWhen(orElse: ()=>_buildSuccess(context),
         success: (movieList)=>_buildSuccess(context),
          loading: ()=>Center(child: CircularProgressIndicator(),)
         );
