@@ -58,102 +58,66 @@ lib/
 ├── generated/               # Auto-generated code (Assets, Freezed, etc.)
 └── main.dart                # Application entry point
 ```
-🧱 Architecture & Design Decisions
+## 🧱 Architecture & Design Decisions
 
-✔ Presentation Layer
+### ✔ Presentation Layer
+* **State Management:** `flutter_bloc` (Cubits) is used to manage the state of the UI.
+* **Navigation:** `go_router` handles deep linking and navigation stacks.
+* **UI Components:** `flutter_screenutil` for responsive design and `flutter_svg` for vector graphics.
 
-State Management: flutter_bloc (Cubits) is used to manage the state of the UI.
+### ✔ Domain Layer
+* Contains pure Dart code: **Entities** and **Repository Interfaces**.
+* Totally independent of external libraries (UI, Database, Network).
 
-Navigation: go_router handles deep linking and navigation stacks.
+### ✔ Data Layer
+* **Networking:** Implemented using `dio` with interceptors (logging via `pretty_dio_logger`).
+* **Cancel Token Strategy:** Specifically implemented in search features to cancel previous requests when a new character is typed, reducing server load and saving data.
+* **Local Storage:** `sembast` (NoSQL) database implementation for offline capabilities.
+* **Encryption:** `encrypt` package is used for sensitive data handling.
 
-UI Components: flutter_screenutil for responsive design and flutter_svg for vector graphics.
+---
 
+## 📦 Packages Used
 
-✔ Domain Layer
+### 🎨 UI & UX
+* `flutter_screenutil`: ^5.9.3
+* `cupertino_icons`: ^1.0.8
+* `flutter_svg`: 2.2.2
+* `extended_image`: ^10.0.1
+* `infinite_scroll_pagination`: ^4.1.0
 
-Contains pure Dart code: Entities and Repository Interfaces.
+### 🧠 State Management
+* `flutter_bloc`: ^9.1.1
 
-Totally independent of external libraries (UI, Database, Network).
+### 🌐 Networking
+* `dio`: ^5.9.0 (**Used with CancelToken**)
+* `pretty_dio_logger`: ^1.4.0
 
+### 🔌 Dependency Injection
+* `get_it`: ^9.0.5
 
-✔ Data Layer
+### 🔀 Routing
+* `go_router`: ^14.0.1
 
-Networking: Implemented using dio with interceptors (logging via pretty_dio_logger).
+### 💾 Local Storage & Security
+* `sembast`: ^3.8.5+2
+* `path_provider`: ^2.1.5
+* `encrypt`: ^5.0.3
 
-Cancel Token Strategy: Specifically implemented in search features to cancel previous requests when a new character is typed, reducing server load and saving data.
+### 🛠 Utilities & Logging
+* `logger`: ^2.0.2+1
+* `flutter_gen`: ^5.12.0
 
-Local Storage: sembast (NoSQL) database implementation for offline capabilities.
+### 🏗 Code Generation
+* `freezed`: ^3.2.3
+* `json_serializable`: (dev)
+* `build_runner`: ^2.10.3
 
-Encryption: encrypt package is used for sensitive data handling.
+---
 
+## 🚀 Getting Started
 
-📦 Packages Used
-
-🎨 UI & UX
-
-flutter_screenutil: ^5.9.3
-
-cupertino_icons: ^1.0.8
-
-flutter_svg: 2.2.2
-
-extended_image: ^10.0.1
-
-infinite_scroll_pagination: ^4.1.0
-
-🧠 State Management
-
-flutter_bloc: ^9.1.1
-
-🌐 Networking
-
-dio: ^5.9.0 (Used with CancelToken)
-
-pretty_dio_logger: ^1.4.0
-
-🔌 Dependency Injection
-
-get_it: ^9.0.5
-
-🔀 Routing
-
-go_router: ^14.0.1
-
-💾 Local Storage & Security
-
-sembast: ^3.8.5+2
-
-path_provider: ^2.1.5
-
-encrypt: ^5.0.3
-
-🛠 Utilities & Logging
-
-logger: ^2.0.2+1
-
-flutter_gen: ^5.12.0
-
-🏗 Code Generation
-
-freezed: ^3.2.3
-
-json_serializable: (dev)
-
-build_runner: ^2.10.3
-
-
-
-🚀 Getting Started
-1. Clone the repository
-
+### 1. Clone the repository
+```bash
 git clone [https://github.com/your-username/fenix-mobile-case.git](https://github.com/your-username/fenix-mobile-case.git)
 cd fenix-mobile-case
-
-2. Install dependencies
-flutter pub get
-
-3. Generate code (Freezed, JSON, Assets)
-flutter pub run build_runner build --delete-conflicting-outputs
-
-4. Run the app
-flutter run
