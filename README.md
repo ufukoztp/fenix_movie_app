@@ -131,7 +131,7 @@ flutter pub get
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
-###4. Run the app
+### 4. Run the app
 ```bash
 flutter run
 ```
