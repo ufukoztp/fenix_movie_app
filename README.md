@@ -6,8 +6,7 @@ A modern, modular, and scalable Flutter case study application built with **Clea
 ---
 
 ### 🚀 Built With
-![Flutter](https://img.shields.io/badge/Flutter-3.10.0+-02569B?logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-3.0.0+-0175C2?logo=dart&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-3.38.9+-02569B?logo=flutter&logoColor=white)
 ![Clean Architecture](https://img.shields.io/badge/Clean%20Architecture-On-green)
 ![State Management](https://img.shields.io/badge/State-BLoC-blue)
 ![DI](https://img.shields.io/badge/DI-GetIt-orange)
@@ -30,7 +29,7 @@ A modern, modular, and scalable Flutter case study application built with **Clea
 ## 📁 **Project Structure**
 
 The project follows a feature-first Clean Architecture approach.
-
+```txt
 lib/
 ├── common/                  # Shared resources across the app
 │   ├── base/                # Base models and enums
@@ -58,8 +57,7 @@ lib/
 │
 ├── generated/               # Auto-generated code (Assets, Freezed, etc.)
 └── main.dart                # Application entry point
-
-
+```
 🧱 Architecture & Design Decisions
 
 ✔ Presentation Layer
@@ -142,6 +140,8 @@ freezed: ^3.2.3
 json_serializable: (dev)
 
 build_runner: ^2.10.3
+
+
 
 🚀 Getting Started
 1. Clone the repository
