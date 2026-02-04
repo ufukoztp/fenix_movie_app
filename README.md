@@ -119,5 +119,20 @@ lib/
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/your-username/fenix-mobile-case.git](https://github.com/your-username/fenix-mobile-case.git)
+git clone https://github.com/ufukoztp/fenix_movie_app.git
 cd fenix-mobile-case
+```
+### 2. Install dependencies
+```bash
+flutter pub get
+```
+### 3. Generate code (Freezed, JSON, Assets)
+```bash
+flutter pub run build_runner build --delete-conflicting-outputs
+```
+
+###4. Run the app
+```bash
+flutter run
+```
+
