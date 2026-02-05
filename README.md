@@ -78,7 +78,7 @@ lib/
 ### ✔ Data Layer
 * **Networking:** Implemented using `dio` with interceptors (logging via `pretty_dio_logger`).
 * **Cancel Token Strategy:** Specifically implemented in search features to cancel previous requests when a new character is typed, reducing server load and saving data.
-* **Local Storage:** `sembast` (NoSQL) database implementation for offline capabilities.
+* **Local Storage:** `sembast` (NoSQL) database implementation for.
 * **Encryption:** `encrypt` package is used for sensitive data handling.
 
 ---
