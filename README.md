@@ -136,3 +136,9 @@ flutter pub run build_runner build --delete-conflicting-outputs
 flutter run
 ```
 
+## Screenshots
+<img width="1179" height="2556" alt="Simulator Screenshot - iPhone 16 - 2026-02-05 at 03 14 11" src="https://github.com/user-attachments/assets/169b727f-e831-4638-8cd3-7c03239181df" />
+<img width="1179" height="2556" alt="Simulator Screenshot - iPhone 16 - 2026-02-05 at 03 14 35" src="https://github.com/user-attachments/assets/6de3bf0c-14f2-479d-ab3e-31fbde37c7d6" />
+<img width="1179" height="2556" alt="Simulator Screenshot - iPhone 16 - 2026-02-05 at 03 15 47" src="https://github.com/user-attachments/assets/bc2cae64-c7aa-4f9f-a64e-7b7decea6718" />
+
+
