@@ -17,11 +17,11 @@ A modern, modular, and scalable Flutter case study application built with **Clea
 
 
 ## Screenshots
-<img width="250" alt="Simulator Screenshot - iPhone 16 - 2026-02-05 at 03 14 11" src="https://github.com/user-attachments/assets/169b727f-e831-4638-8cd3-7c03239181df" />
+<img width="250" alt="Simulator Screenshot - iPhone 16 - 2026-02-05 at 03 21 49" src="https://github.com/user-attachments/assets/825c795d-37df-48cd-a2ba-33019254971b" />
 
-<img width="250" alt="Simulator Screenshot - iPhone 16 - 2026-02-05 at 03 14 35" src="https://github.com/user-attachments/assets/6de3bf0c-14f2-479d-ab3e-31fbde37c7d6" />
+<img width="250" alt="Simulator Screenshot - iPhone 16 - 2026-02-05 at 03 22 01" src="https://github.com/user-attachments/assets/ce159818-89a9-4df2-b4ca-dd83b7cd29a2" />
 
-<img width="250" alt="Simulator Screenshot - iPhone 16 - 2026-02-05 at 03 15 47" src="https://github.com/user-attachments/assets/bc2cae64-c7aa-4f9f-a64e-7b7decea6718" />
+<img width="250" alt="Simulator Screenshot - iPhone 16 - 2026-02-05 at 03 21 55" src="https://github.com/user-attachments/assets/073b0c12-1650-4a24-b4cb-d028def06a93" />
 
 ## 🌟 Key Features
 
